@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable react-refresh/only-export-components */
+/* eslint-disable no-unused-labels */
 // useMemo Hiểu đơn giản thì nó sẽ ghi nhớ(Memoized) giá trị giữa các lần mà Component re-render.
 
 import { useEffect, useMemo } from "react";
@@ -36,3 +39,5 @@ function Test3(){
     }, [value]);
     return <div>test3</div>
 }
+
+// 3. Khi tất cả các props và chính Component đó đều được ghi nhớ(memoized), bằng không tất cả đều vô nghĩa
