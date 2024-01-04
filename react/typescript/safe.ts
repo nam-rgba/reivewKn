@@ -37,3 +37,23 @@ let myname: unknown= 'nam doan';
 if(typeof myname === 'string'){
     console.log(myname.includes('nam'));
 }
+
+// never type
+
+function throwe(error: string): never{
+    throw new Error(error);
+}
+
+function lopp(): never{
+    while(true){
+        console.log('gg')
+    }
+}
+
+// Enum type
+
+enum time {
+    SECOND,
+    MINUTE,
+    HOUR
+}
